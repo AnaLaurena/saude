@@ -60,10 +60,10 @@ public class login {
         nickname = scanner.nextLine();
 
         // Criar um novo usuário com os dados fornecidos
-        usuario usuario = new usuario(nome, celular, email, senha, nickname);
+        usuario usuario = new usuario(nome, celular, email, senha,nickname);
 
         // Validar o cadastro
-        boolean cadastroValido = usuario.validarcadastro(confirmacaoSenha);
+         boolean cadastroValido = usuario.validarcadastro(confirmacaoSenha);
         if (cadastroValido) {
             System.out.println("Cadastro realizado com sucesso!");
         } else {

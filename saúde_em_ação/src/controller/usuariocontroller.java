@@ -15,9 +15,9 @@ public class usuariocontroller {
         this.usuarios = new ArrayList<>();
     }
 
-    public String criarUsuario(String nome, String email, String celular, String senha) {
+    public String criarUsuario(String nome, String email, String celular, String senha,String nickname) {
         String senhaHash = gerarHashSenha(senha);
-        usuario usuarioNovo = new usuario(nome, email, celular, senhaHash);
+        usuario usuarioNovo = new usuario (nome, email,celular,nickname senhaHash);
         usuarios.add(usuarioNovo);
         return "Usuário cadastrado com sucesso";
     }
@@ -42,7 +42,7 @@ public class usuariocontroller {
         
     }
 
-	public usuario autenticarusuario(String cpf, String senha) {
+	public usuario autenticarusuario(String Nickname, String senha) {
 		// TODO Auto-generated method stub
 		return null;
 	}

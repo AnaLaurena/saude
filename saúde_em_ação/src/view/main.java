@@ -16,8 +16,12 @@ public class main {
             System.out.println("Selecione uma opção:");
             System.out.println("1. Realizar Cadastro");
             System.out.println("2. Realizar Login");
-            System.out.println("0. Sair");
+            System.out.println("3. Listagem");        
+            System.out.println(" 4.RegistroSono");
+            System.out.println(" 5.RegistroAlimentacao");
             System.out.print("Escolha: ");
+            System.out.println("0. Sair");
+         
             escolha = scanner.nextInt();
 
             switch (escolha) {
@@ -27,7 +31,16 @@ public class main {
                 case 2:
                     realizarLogin(scanner);
                     break;
+                case 3:
+                    visualisarLista (scanner);
+                case 4 :
+                	registrasono(scanner);
+                    break;
+                case 5 :
+                	registraalimentacao(scanner);
+                    break;
                 case 0:
+                
                     System.out.println("Saindo do sistema...");
                     break;
                 default:
@@ -39,7 +52,31 @@ public class main {
     }
 
     
-    private static void realizarCadastro(Scanner scanner) {
+    private static void registraalimentacao(Scanner scanner) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	private static void registrasono(Scanner scanner) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	private static void visualisarLista(Scanner scanner) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	private static void realizarLista(Scanner scanner) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	private static void realizarCadastro(Scanner scanner) {
         
         String nome, celular, email, senha, confirmacaoSenha, nickname;
 
